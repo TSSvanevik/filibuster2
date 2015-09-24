@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link data-th-href="${portal.assetUrl({'_path=css/bootstrap.min.css'})}" href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link data-th-href="${portal.assetUrl({'_path=css/fibst.css'})}" href="../assets/css/fibst.css" rel="stylesheet" />
+	</head>
+	<body data-portal-component-type="page">
+		<div class="container">
+
+			<div class="row">
+				<div id="fibst-header">
+					<img src="../assets/img/banner.png" data-th-src="${portal.assetUrl({'_path=img/banner.png'})}"/>
+					<h1><span>Filibuster Records</span></h1>
+					<ul class="nav nav-pills pull-right">
+            			<li role="presentation"><a class="fibst-header-menu-item" href="#">Artister</a></li>
+            			<li role="presentation"><a class="fibst-header-menu-item" href="#">Booking</a></li>
+            			<li role="presentation"><a class="fibst-header-menu-item" href="#">Om oss</a></li>
+        			</ul>
+        		</div>
+        	</div>
+
+        	<div id="fibst-main" data-portal-component-type="region" data-portal-region="main">
+      			<div data-th-each="component : ${mainRegion.components}" data-th-remove="tag">
+        			<div data-portal-component="${component.path}" data-th-remove="tag" />
+      			</div>
+    		</div>
+
+			<div class="row" id="footer">
+    			<h2><span>&copy; 2015 | Filibuster Records</span></h2>
+    		</div>
+    		
+        </div>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<part>
+  <display-name>Nyheter</display-name>
+	<config>
+    <input name="heading" type="TextLine">
+      <label>Overskrift</label>
+      <indexed>true</indexed>
+      <custom-text>default text</custom-text>
+      <occurrences minimum="0" maximum="1"/>
+      <config>
+      </config>
+    </input>
+    <input name="date" type="Date">
+      <label>Dato</label>
+      <indexed>true</indexed>
+      <custom-text>Custom text</custom-text>
+      <occurrences minimum="0" maximum="1"/>
+      <config>
+        <timezone>true</timezone>
+      </config>
+    </input>
+    <input name="content" type="HtmlArea">
+      <label>Innhold</label>
+      <indexed>true</indexed>
+      <custom-text>standard tekst</custom-text>
+      <occurrences minimum="0" maximum="1"/>
+      <config>
+      </config>
+    </input>
+  </config>
+</part>

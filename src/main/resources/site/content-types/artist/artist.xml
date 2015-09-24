@@ -1,0 +1,10 @@
+<content-type>
+	<display-name>Artist</display-name>
+	<super-type>base:unstructured</super-type>
+	<form>
+		<input name="artistname" type="TextLine">
+			<label>Artistnavn</label>
+			<occurences minimum="0" maximum="100"/>
+		</input>
+	</form>
+</content-type>
